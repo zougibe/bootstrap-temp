@@ -1,0 +1,142 @@
+:root {
+    --gray: #6c757d;
+}
+header {
+    background: linear-gradient(rgba(48, 48, 48, 0.7), rgba(0, 0, 0, 0.7)), url("./images/42.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(138, 138, 138, 0.187);
+    height: 100px;
+    font-weight: bold;
+    width: 100%;
+}
+.nav-link {
+    color: white !important;
+}
+.nav-link.active,
+.nav-link:hover {
+    color: #f1c40f !important;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 500px;
+    text-align: center;
+    border-bottom: 1px solid rgb(123, 123, 123);
+}
+.header-text {
+    height: 90vh;
+    color: aliceblue;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+}
+
+.grid-temps ::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line-top {
+    top: 0;
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    height: 5rem;
+    border-left: 2px solid #f5ba4b;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.header-var {
+    background-color: #f2f2f2;
+}
+.quote:before {
+    content: "\f10d";
+    font-weight: 900;
+    min-width: 2.5em;
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.testimonial-box {
+    padding: 20px;
+    max-width: 600px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    margin-right: 10px;
+    color: black;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.author {
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    margin-top: 10px;
+}
+.feature-box {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-box i {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-weight: bold;
+}
+
+.custom-section {
+    padding: 50px;
+    background: #f8f9fa;
+}
+footer {
+    height: 30vh;
+    background-color: #343a40;
+    color: white;
+}
+.footer .social-icons a {
+    color: #f0a500;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+.footer .social-icons a:hover {
+    color: #ffcc00;
+}
+
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
